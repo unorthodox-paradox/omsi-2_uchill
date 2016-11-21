@@ -206,13 +206,13 @@
 	(L.L.Dachluke_1_klappe_2) (L.L.Dachluke_2_klappe_2) + s2
 	(L.L.velocity) 0 >
 	{if}
-		l1 (C.L.cabinair_A_perhatch_zul) * s1
-		l2 (C.L.cabinair_A_perhatch_abl) * s2
+		l1 (C.L.cabinair_A_perhatch_abl) * s1
+		l2 (C.L.cabinair_A_perhatch_zul) * s2
 	{else}
 		(L.L.velocity) 0 <
 		{if}
-			l1 (C.L.cabinair_A_perhatch_abl) * s1
-			l2 (C.L.cabinair_A_perhatch_zul) * s2
+			l1 (C.L.cabinair_A_perhatch_zul) * s1
+			l2 (C.L.cabinair_A_perhatch_abl) * s2
 		{else}
 			l1 (C.L.cabinair_A_perhatch_standstill) * s1
 			l2 (C.L.cabinair_A_perhatch_standstill) * s2
