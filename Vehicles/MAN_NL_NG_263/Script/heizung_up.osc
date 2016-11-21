@@ -199,20 +199,20 @@
 	
 ' Berechnung der effektiven Gesamt-Luftaustauschfläche:
 	(L.L.door_0) (L.L.door_1) (L.L.door_2) (L.L.door_3) (L.L.door_4) (L.L.door_5) + + + + + (C.L.cabinair_A_perdoor) *
-		(L.L.cp_klappfenster_1) (L.L.cp_klappfenster_2) + (C.L.cabinair_A_perwindow) * + (C.L.cabinair_A_driverwindow)
-		(L.L.cp_fahrerfenster_pos) * + s0
+		(L.L.cp_klappfenster_1) (L.L.cp_klappfenster_2) (L.L.cp_klappfenster_3) (L.L.klappfenster_4) + + +
+                (C.L.cabinair_A_perwindow) * + (C.L.cabinair_A_driverwindow) (L.L.cp_fahrerfenster_pos) * + s0
 ' hatch contribution varies based on velocity sign, not just state
-	(L.L.Dachluke_1_klappe_1) (L.L.Dachluke_2_klappe_1) + s1
-	(L.L.Dachluke_1_klappe_2) (L.L.Dachluke_2_klappe_2) + s2
+	(L.L.Dachluke_1_klappe_1) (L.L.Dachluke_2_klappe_1) (L.L.Dachkuke_3_klappe_1) (L.L.Dachluke_4_klappe_1) + + + s1
+	(L.L.Dachluke_1_klappe_2) (L.L.Dachluke_2_klappe_2) (L.L.Dachluke_3_klappe_2) (L.L.Dachluke_4_klappe_2) + + + s2
 	(L.L.velocity) 0 >
 	{if}
-		l1 (C.L.cabinair_A_perhatch_abl) * s1
-		l2 (C.L.cabinair_A_perhatch_zul) * s2
+		l1 (C.L.cabinair_A_perhatch_zul) * s1
+		l2 (C.L.cabinair_A_perhatch_abl) * s2
 	{else}
 		(L.L.velocity) 0 <
 		{if}
-			l1 (C.L.cabinair_A_perhatch_zul) * s1
-			l2 (C.L.cabinair_A_perhatch_abl) * s2
+			l1 (C.L.cabinair_A_perhatch_abl) * s1
+			l2 (C.L.cabinair_A_perhatch_zul) * s2
 		{else}
 			l1 (C.L.cabinair_A_perhatch_standstill) * s1
 			l2 (C.L.cabinair_A_perhatch_standstill) * s2
