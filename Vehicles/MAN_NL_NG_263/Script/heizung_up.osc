@@ -143,12 +143,14 @@
 
 ' Frame
 '
-' First-steps note for modders / integrators: Begin by modifying the number of windows, doors, hatches and cabin
-' heaters (<number_of_cabin_heaters> constant), such that they match those of your targeted vehicle. Proceed by
-' reconsidering important constants' (e.g., <cabinair_V>, <cabinair_A_xxx>, <cabinair_Vrate_xxx>) values--but
-' make sure you do actually understand the relevant segments of the script first though, as there are
-' numerous dependencies between, as well as constraints imposed upon and expected to be
-' obeyed by many of those constants, and no sanitization is performed by the script.
+' First-steps note for modders / integrators: Begin by modifying the number of windows, doors, hatches, cabin heaters
+' and roof-mounted A/C units (use the <number_of_cabin_heaters>, <number_of_passenger_ac_units> constants
+' respectively for the last two), such that they match those of your targeted vehicle. Proceed by
+' reconsidering important constants' (e.g., <cabinair_V>, <cabinair_A_xxx>, <cabinair_Vrate_xxx>)
+' values--but make sure you do actually understand the relevant segments of the script first
+' though, as there are numerous dependencies between, as well as constraints imposed upon
+' and expected to be obeyed by many of those constants, and no sanitization of the values
+' whatsoever is performed by the script prior to their use.
 '-----------------------------------------------------------------------------------------------------------------------
 {macro:heizung_frame}
 	(L.L.vis_clima) (L.L.vis_clima_h) || (S.L.has_passenger_ac)
