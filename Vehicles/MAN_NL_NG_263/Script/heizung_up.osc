@@ -11,8 +11,8 @@
 '
 ' Dependencies
 '     elec (for querying power availability)
-'	  engine (for cooling circuit and power availability)
-'	  door (for door opening status)
+'     engine (for cooling circuit and power availability)
+'     door (for door opening status)
 '     cockpit (for window and hatch opening status) 
 '
 '#######################################################################################################################
