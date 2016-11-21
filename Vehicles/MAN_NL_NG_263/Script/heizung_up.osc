@@ -362,7 +362,7 @@
 ' Assigns logical predefined variable groups' values to the debugging variables (which are only displayed in "-debug",
 ' of course).
 '
-' Modify <debug_var_group> in <.\heizung_constfile.txt> to use this.
+' Modify <debug_var_group> in <.\heizung_constfile_up.txt> to use this.
 '
 ' Note: Unless real-time updates of the values are desired, saving the current situation and viewing
 ' <<OMSI>\maps\<map_name>\laststn.osn> in a text editor is typically more convenient, as it provides a snapshot of
@@ -1395,7 +1395,7 @@
 '
 ' Disclaimer: None of this is claimed to be scientifically sane, let alone correct.
 '
-' See also: Constants prefixed "ghe_" in <.\heizung_constfile.txt>.
+' See also: Constants prefixed "ghe_" in <.\heizung_constfile_up.txt>.
 '-----------------------------------------------------------------------------------------------------------------------
 {macro:ghe_impact}
 ' time-of-day decrease factor; if zero, the next block doesn't matter, so just skip it
