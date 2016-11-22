@@ -572,11 +572,11 @@ driver_ac_engine_off_air_volume_factor
 0.5
 
 [const]
-driver_ac_efficiency
+driver_ac_effectiveness
 7
 
 [const]
-driver_ac_recirculation_mode_efficiency
+driver_ac_recirculation_mode_effectiveness
 2.5
 
 [const]
@@ -592,7 +592,7 @@ driver_ac_temp_relevant_air_volume_update_rate
 0.5
 
 [const]
-passenger_ac_efficiency
+passenger_ac_effectiveness
 7
 
 [const]
@@ -600,7 +600,7 @@ number_of_passenger_ac_units
 2
 
 [const]
-passenger_ac_recirculation_mode_efficiency
+passenger_ac_recirculation_mode_effectiveness
 2.5
 
 [const]
@@ -632,11 +632,11 @@ cabin_heater_turbo_mode_engine_t_max
 40
 
 [const]
-cabin_heater_turbo_mode_efficiency_increase_factor
+cabin_heater_turbo_mode_effectiveness_increase_factor
 1.5
 
 [const]
-cabin_heater_efficiency
+cabin_heater_effectiveness
 2
 
 [const]
@@ -648,15 +648,15 @@ cabin_heater_air_volume_slow_update_rate
 0.0003
 
 [const]
-dehumidification_efficiency
+dehumidification_effectiveness
 0.002
 
 [const]
-humidification_efficiency
+humidification_effectiveness
 0.00125
 
 [newcurve]
-humidity_management_efficiency_f_temp
+humidity_management_effectiveness_f_temp
 
 [pnt]
 -30
