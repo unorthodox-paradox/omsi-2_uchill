@@ -52,7 +52,7 @@ generic_high_value
 
 [const]
 heizung_Qrate_auxheat
-250000
+25000
 
 [const]
 cabinair_Qrate_envir_factor
