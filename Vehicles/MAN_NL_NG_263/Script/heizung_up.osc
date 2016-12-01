@@ -714,7 +714,7 @@
     {if}
 ' activation branch
 ' new start condition (cached for duplication reduction)
-' <ac_cooldown_threshold_t_diff> contributes to an "anti-repeat" condition, so as to prevent on-off loops
+' <ac_cooldown_threshold_t_diff> contributes to an "anti-repeat" condition, so as to prevent instantaneous on-off loops
 ' <r3> = <Cabinair_Temp>
         l3 (C.L.ac_heating_cabin_t_max) (C.L.ac_cooldown_threshold_t_diff) s0 - < l3 (C.L.ac_cooling_cabin_t_min) l0 + >
             || s7
@@ -876,7 +876,7 @@
     {if}
 ' activation branch
 ' new start condition (cached for duplication reduction)
-' <ac_cooldown_threshold_t_diff> contributes to an "anti-repeat" condition, so as to prevent on-off loops
+' <ac_cooldown_threshold_t_diff> contributes to an "anti-repeat" condition, so as to prevent instantaneous on-off loops
 ' <r3> = <Cabinair_Temp>
         l3 (C.L.ac_heating_cabin_t_max) (C.L.ac_cooldown_threshold_t_diff) s0 - < l3 (C.L.ac_cooling_cabin_t_min) l0 + >
             || s7
@@ -995,7 +995,8 @@
     {if}
 ' activation branch
 ' new start condition (cached for duplication reduction)
-' <humidity_management_cooldown_threshold_humidity_diff> contributes to an "anti-repeat" condition, so as to prevent on-off loops
+' <humidity_management_cooldown_threshold_humidity_diff> contributes to an "anti-repeat" condition, so as to prevent
+'  instantaneous on-off loops
         l7 (C.L.dehumidification_cabin_rel_humidity_min)
             (C.L.humidity_management_cooldown_threshold_humidity_diff) + >
             (L.L.Cabinair_relHum) (C.L.humidification_cabin_rel_humidity_max)
@@ -1119,7 +1120,7 @@
                     (C.L.cabin_heater_start_delay_min) + s1
             {endif}
 ' <cabin_heater_cooldown_threshold_t_diff> and <humidity_management_cooldown_threshold_humidity_diff> contribute to
-'  "anti-repeat" conditions, so as to prevent on-off loops
+'  "anti-repeat" conditions, so as to prevent instantaneous on-off loops
 ' <r3> = <Cabinair_Temp>
             l3 (C.L.cabin_heater_cabin_t_max) (C.L.cabin_heater_cooldown_threshold_t_diff) - < (S.L._r11)
             (L.L.Cabinair_relHum) (C.L.dehumidification_cabin_rel_humidity_min)
@@ -1200,7 +1201,8 @@
                     (L.L.engine_temperature) - 0 max (C.L.auxheat_start_delay_env_factor) * +
                     (C.L.auxheat_start_delay_min) + s1
             {endif}
-' <auxheat_cooldown_threshold_t_diff> contributes to an "anti-repeat" condition, so as to prevent on-off loops
+' <auxheat_cooldown_threshold_t_diff> contributes to an "anti-repeat" condition, so as to prevent instantaneous on-off
+'  loops
 ' <_r9> = <Timegap>
             (L.L.auxheat_start_stop_timer) (L.L._r9) + s0 l1 > (L.L.engine_temperature) (C.L.auxheat_engine_t_max)
                 (C.L.auxheat_cooldown_threshold_t_diff) - < &&
