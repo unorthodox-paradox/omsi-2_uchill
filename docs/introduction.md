@@ -1,3 +1,5 @@
+## Introduction
+***
 ### Motivation
 
 Upon testing the wonderful *MAN Stadtbusfamilie* add-on after its release in September 2016, I noticed that the vehicles' heating / cooling script suffered from a bug: Its driver's A/C function would cool the bus almost with the intensity of a refrigerator :stuck_out_tongue:. Since it was not the first time I was witnessing the particular bug, I decided to do myself a favor and fix it; *"this shouldn't take more than an hour"*, I thought. Little did I know that I would end up wasting roughly two months rewriting the entire damned thing, polishing and testing it over and over, until it felt good enough to me. Once that "milestone" had been achieved, I wondered whether it would be meaningful to contribute the resulting modification to the add-on's developers directly, or to just publish it for everyone to use. Eventually I chose to follow the latter path, as the script is not particularly tightly coupled to the vehicles it was written for and could thus prove useful to other vehicle (modification) developers in the future.
