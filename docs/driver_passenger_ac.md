@@ -4,7 +4,7 @@
 
 Abbreviation | Meaning
 ------------ | -------
-*FX*, *AX*| Function and attribute labels, as per the [overview](./Manual#overview).
+*FX*, *AX*| Function and attribute labels, as per the [overview](./manual.md#overview).
 *EM* | *Engine-assisted mode*, an *operational mode* (see below) of F1.
 *AM* | *A/C-based mode*, another operational mode of F1.
 *FM* | *Fresh air mode*, a *setting* of A4.
