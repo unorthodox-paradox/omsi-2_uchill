@@ -18,7 +18,7 @@ The effectiveness and the start / stop preconditions of all major functions (air
 
 #### Sound hooks
 
-Sound hooks pertaining to all major functions have been introduced. Note that you will still have to install sound files of your choosing yourself and couple them with the provided hooks in the sound configuration file of the vehicle you are modding, in order for them to become audible. An example `sound_xxx.cfg` excerpt is given in the [installation](https://github.com/unorthodox-paradox/omsi_2_man_stadtbusfamilie_heating_cooling_script/wiki/Installation#sound-integration) chapter.
+Sound hooks pertaining to all major functions have been introduced. Note that you will still have to install sound files of your choosing yourself and couple them with the provided hooks in the sound configuration file of the vehicle you are modding, in order for them to become audible. An example `sound_xxx.cfg` excerpt is given in the [installation](./installation.md#sound-integration) chapter.
 
 #### Window misting hooks
 
