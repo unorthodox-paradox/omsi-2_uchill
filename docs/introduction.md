@@ -7,7 +7,7 @@ Upon testing the wonderful *MAN Stadtbusfamilie* add-on after its release in Sep
 ### Credits
 
 Thank you...
-- [M+R Software](http://m-r-software.de/), for giving us the game, scripting engine and the original version of this very script; also for the two *MAN NL/NG* sound files of theirs referenced herein<sup>[1](#footnote-1)</sup>.
+- [M+R Software](http://m-r-software.de/), for giving us the game, scripting engine and the original version of this very script; also for the two *MAN NL/NG* sound files of theirs referenced herein<sup>[1](#footnote_1)</sup>.
 - [Chrizzly92](http://www.omnibussimulator.de/forum/index.php?page=User&userID=15380) and everyone having contributed to the [MAN Stadtbusfamilie](http://man-stadtbus.de) add-on, for the awesome buses in general and the derived version of the script in particular.
 - [Morphi](http://www.omnibussimulator.de/forum/index.php?page=User&userID=531), for all the years of tireless contributing he has invested into the community on so many levels in general, the two of his *MB O530(G)* mod pack's sound files referenced herein<sup>[1](#footnote-1)</sup>, some ideas as well as a few lines of code that were taken / adopted from his aforementioned mod's respective script.
 - [Carl R. Nave](http://hyperphysics.phy-astr.gsu.edu/hbase/Kinetic/relhum.html#c4), [Steve Scanlon](http://www.ringbell.co.uk/info/humid.htm) and [Wolfgang Kühn](http://www.decatur.de/javascript/dew/): the const-file's humidity- and dew point-related "curves" are based on output data that were generated from utilities authored and/or maintained by these people.
@@ -49,4 +49,4 @@ This is a somewhat "performance-intensive" script, partially due to its complexi
 I am neither a physicist, nor someone knowledgeable on the field of heating / cooling systems; in fact I am not even particularly bright at science / math in general (but even if I were, OMSI's not-so-great math support would still get in the way). The script is consequently based on common sense and empirical evidence at large, rather than backed by "hard" science. If you came here in search of something even remotely scientifically accurate, I must disappoint you—you visited the wrong HTTP resource.
 
 ***
-<sub><a name="footnote-1">1</a>: Those are merely referenced, i.e., they are *not redistributed* with this modification.</sub>
+<sub><a name="footnote_1">1</a>: Those are merely referenced, i.e., they are *not redistributed* with this modification.</sub>
