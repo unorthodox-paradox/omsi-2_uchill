@@ -70,7 +70,7 @@ When [idle](#idle-states), both functions (F1 only while in AM) in most cases re
 
 Use of the two functions can trigger playback of up to (save for button sounds) five different sounds: two per function (one being fan- and one A/C-emitted) plus one allocated to (if present) the exterior A/C unit.
 
-The volume of the fan-related ones among the sounds is affected by the corresponding function's output volume as well as the power supply (engine and battery state). The interior A/C sounds' volume is too affected by the function's output volume and power supply, as well as use of the economy and maintenance profiles—when either of the latter is active, this group of sounds gets disabled—and use of *[F3](./humidity-management.md)*. Lastly, the exterior A/C sounds' volume depends on power supply and generally on which ones of all three A/C-based functions—F1, F2 and F3, weighted differently—are in use; in other words, its volume gets maximized when all functions are active.
+The volume of the fan-related ones among the sounds is affected by the corresponding function's output volume as well as the power supply (engine and battery state). The interior A/C sounds' volume is too affected by the function's output volume and power supply, as well as use of the economy and maintenance profiles—when either of the latter is active, this group of sounds gets disabled—and use of *[F3](./humidity_management.md)*. Lastly, the exterior A/C sounds' volume depends on power supply and generally on which ones of all three A/C-based functions—F1, F2 and F3, weighted differently—are in use; in other words, its volume gets maximized when all functions are active.
 
 ### Inertia
 
