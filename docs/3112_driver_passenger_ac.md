@@ -20,7 +20,7 @@ F1, as suggested by its name, is responsible for heating and cooling the driver'
 
 #### 3.1.1.2.3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Operational mode
 
-Depending on its controlling controller's state, F1 may operate in either of the two following primary modes: *EM* (controller in "OFF" state) or *AM* (controller in "ON" state). The former employs a mixture of cool and engine-heated air, while the latter supplies air whose temperature is regulated by the roof-mounted A/C unit (in vehicles not having one, the availability of a smaller, driver-dedicated imaginary one is assumed).
+Depending on its controller's state, F1 may operate in either of the two following primary modes: *EM* (controller in "OFF" state) or *AM* (controller in "ON" state). The former employs a mixture of cool and engine-heated air, while the latter supplies air whose temperature is regulated by the roof-mounted A/C unit (in vehicles not having one, the availability of a smaller, driver-dedicated imaginary one is assumed).
 
 F2 has no such operational mode, as it is always backed by one or multiple exterior A/C units.
 
@@ -76,7 +76,7 @@ The volume of the fan-related ones among the sounds is affected by the correspon
 
 #### 3.1.1.2.14&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Inertia
 
-From the instant either of the functions gets triggered (as a result of e.g. their controller being trigerred or, in the case of F1 in AM, A2 being adjusted), several factors affect the overall delay, i.e., the time that must elapse, before they can begin actually contributing to the cabin's temperature (and its humidity, as a side effect) in the desired way; the primary among these factors are:
+From the instant either of the functions gets triggered (as a result of e.g. their controller being triggered or, in the case of F1 in AM, A2 being adjusted), several factors affect the overall delay, i.e., the time that must elapse, before they can begin actually contributing to the cabin's temperature (and its humidity, as a side effect) in the desired way; the primary among these factors are:
 - A random propagation delay (F1 in AM) for the A/C unit to even acknowledge the activation signal.
 - Unless eco mode applies (F1 in AM), the environmental temperature's departure from the (targeted) output temperature of each function.
 - The time required for the A/C unit's heating / cooling circuit (F1 in AM) to reach a temperature that is "close enough" to the (targeted) output temperature of each function, so that its output can be perceived as "comfortable" by humans. In a heating context, for instance, if it were freezing cold outside, the A/C unit would not admit any air into the cabin until it became capable of heating it up to well above the freezing point.
