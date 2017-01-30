@@ -185,7 +185,7 @@ Variable | Purpose | Unit | Value
 `ac_ext_sound_vol`<br/>`ac_ext_sound_vol_target` | Current / Target exterior A/C sound volume; shared by any of F1 / F2 / F3 (in AM). | | [0, 1]
 `auxheat_sound_vol`<br/>`auxheat_sound_vol_target` | Current / Target F4 sound volume. | | [0, 1]
 `cabin_heaters_sound_vol`<br/>`cabin_heaters_sound_vol_target` | Current / Target F5 sound volume. | | [0, 1]
-`window_int_misting`<br/>`window_int_misting_target`<br/>`window_ext_misting`<br/>`window_ext_misting_target` | Current / Target WME on the inside / outside. | [0, 1]
+`window_int_misting`<br/>`window_int_misting_target`<br/>`window_ext_misting`<br/>`window_ext_misting_target` | Current / Target WME on the inside / outside. | | [0, 1]
 
 #### 5.3.2&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;External
 
