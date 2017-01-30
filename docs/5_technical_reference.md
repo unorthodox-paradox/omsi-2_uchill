@@ -193,21 +193,24 @@ In order to function properly, `uchill.osc` additionally relies upon some extern
 
 #### 5.3.2.1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;OMSI-built-in
 
-Variable | Read| Write | [System variable](http://www.omnibussimulator.de/omsiwiki.de/index.php?title=System-_und_vordefinierte_lokalen_Variablen#Systemvariablen) | [(On-demand-)Local variable](http://www.omnibussimulator.de/omsiwiki.de/index.php?title=System-_und_vordefinierte_lokalen_Variablen#Vordefinierte_lokale_Variablen)
----------|-----------|------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------
-`Timegap` | X | | X |
-`Weather_Temperature` | X | | X |
-`Weather_AbsHum` | X | | X |
-`SunAlt` | X | | X |
-`Envir_Brightness` | X | | | X
-`Velocity` | X | | | X
-`humans_count` | X | | | X
-`Debug_[0-5]` | | X | | X
-`Cabinair_Temp` | X | X | | X
-`Cabinair_absHum` | X | X | | X
-`Cabinair_relHum` | X | | | X
-`PrecipType` | X | | | X
-`PrecipRate` | X | | | X
+Variable | Read | Write
+---------|------|------
+`Timegap`<sup>[1](#5321_variable_table_remark_1)</sup> | X |
+`Weather_Temperature`<sup>[1](#5321_variable_table_remark_1)</sup> | X |
+`Weather_AbsHum`<sup>[1](#5321_variable_table_remark_1)</sup> | X |
+`SunAlt`<sup>[1](#5321_variable_table_remark_1)</sup> | X |
+`Envir_Brightness`<sup>[2](#5321_variable_table_remark_2)</sup> | X |
+`Velocity`<sup>[2](#5321_variable_table_remark_2)</sup> | X |
+`humans_count`<sup>[2](#5321_variable_table_remark_2)</sup> | X |
+`Debug_[0-5]`<sup>[2](#5321_variable_table_remark_2)</sup> | | X
+`Cabinair_Temp`<sup>[2](#5321_variable_table_remark_2)</sup> | X | X
+`Cabinair_absHum`<sup>[2](#5321_variable_table_remark_2)</sup> | X | X
+`Cabinair_relHum`<sup>[2](#5321_variable_table_remark_2)</sup> | X |
+`PrecipType`<sup>[2](#5321_variable_table_remark_2)</sup> | X |
+`PrecipRate`<sup>[2](#5321_variable_table_remark_2)</sup> | X |
+
+<sup><a name="5321_variable_table_remark_1">1</a>: OMSI [System variable](http://www.omnibussimulator.de/omsiwiki.de/index.php?title=System-_und_vordefinierte_lokalen_Variablen#Systemvariablen)</sup><br/>
+<sup><a name="5321_variable_table_remark_2">2</a>: OMSI [(On-demand-)Local variable](http://www.omnibussimulator.de/omsiwiki.de/index.php?title=System-_und_vordefinierte_lokalen_Variablen#Vordefinierte_lokale_Variablen)</sup>
 
 #### 5.4&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Constants
 
@@ -333,6 +336,8 @@ Constant | Purpose | Unit
 `window_misting_update_rate` | Update rate of the `window_int_misting` and `window_ext_misting` variables. | s<sup>-1</sup>
 
 #### 5.5&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Macros
+
+#### 5.5.1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Local
 
 The next table provides a summary over some key macros amongst those of `uchill.osc`, (a subset of) which, along with the macros they delegate to, you will most likely have to refer to, when looking for answers to questions not addressed by the documentation, or adapt, in (the not at all unlikely) case the script does not, nor can be adequately customized via its constants so as to, satisfy your particular use case.
 

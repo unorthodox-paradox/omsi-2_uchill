@@ -9,11 +9,26 @@
     <body>
         <h2><em>UCHill</em> installation for <em>MAN Stadtbusfamilie</em> add-on vehicles</h2>
         <hr/>
+        <div class="warn">
+            <div class="excl">
+                !
+            </div>
+            <div class="text">
+                <h3>Caution!</h3>
+                <p>
+                    Whenever instructed to create a <em>copy</em> of a vehicle-specific file for subsequent modification, make sure that you actually do so,
+                    as well as to always modify the newly-created file, <em>not</em> the original, subsequently. Otherwise, you will immediately <em>break</em>
+                    the unmodified ones, i.e., the non-UCHill-integrated ones, amongst the add-on's vehicles, along with, potentially, the UCHill-integrated
+                    ones, when you next install an add-on-specific update that happens to incorporate breaking changes (e.g., including modified names of
+                    variables that UCHill depends, integration-wise, on).
+                </p>
+            </div>
+        </div>
         <h3>Essential steps</h3>
         <ol>
             <li>
                 <p>
-                    Create a copy of the <code>.bus</code> file corresponding to the vehicle you wish to integrate <em>UCHill</em> with.
+                    Create a copy of the <code>.bus</code> file corresponding to the vehicle you wish to integrate UCHill with.
                 </p>
             </li>
             <li>
@@ -25,7 +40,7 @@
                                 Modify the second string following the <code>[friendlyname]</code> keyword to help you identify the modified version of the vehicle in-game
                                 later on.<br/>
                                 <small>Example:</small><br/>
-                                <div class="code-block">
+                                <div class="pre">
                                     [friendlyname]<br/>
                                     MAN Stadtbus<br/>
                                     A21 - NL263 - Stadtbus - UCHill
@@ -37,11 +52,11 @@
                                 Locate the section beginning with the <code>[varnamelist]</code> keyword. <em>Increment</em> the number following the keyword by <em>2</em>.
                                 Additionally, within that section:<br/>
                                 <small>Find:</small>
-                                <div class="code-block">
+                                <div class="pre">
                                     script\heizung_varlist.txt
                                 </div>
                                 <small>Replace with:</small>
-                                <div class="code-block">
+                                <div class="pre">
                                     ..\..\Scripts\uchill\uchill_vars.txt<br/>
                                     ..\..\Scripts\uchill\integrations\pa_man-stadtbusfamilie\uchill_man-stadtbusfamilie_integration_vars.txt<br/>
                                     ..\..\Scripts\up-utils\up-utils_vars.txt
@@ -56,13 +71,13 @@
                                     <li>
                                         <p>
                                             <small>Find:</small>
-                                            <div class="code-block">
+                                            <div class="pre">
                                                 script\man_NXYY3_main.osc
                                             </div>
                                             The character (sequence) <code>&#39;X&#39;</code>, <code>&#39;YY&#39;</code> will vary based on the vehicle. Create a copy
                                             of the <em>file</em> being referenced, for later modification.<br/>
                                             <small>Replace with (assuming that you named your copy of the script <code>man_NXYYe_main_uchill.osc</code>):</small>
-                                            <div class="code-block">
+                                            <div class="pre">
                                                 script\man_NXYY3_main_uchill.osc
                                             </div>
                                         </p>
@@ -70,11 +85,11 @@
                                     <li>
                                         <p>
                                             <small>Find:</small>
-                                            <div class="code-block">
+                                            <div class="pre">
                                                 script\heizung.osc
                                             </div>
                                             <small>Replace with:</small>
-                                            <div class="code-block">
+                                            <div class="pre">
                                                 ..\..\Scripts\uchill\uchill.osc<br/>
                                                 ..\..\Scripts\uchill\integrations\pa_man-stadtbusfamilie\uchill_man-stadtbusfamilie_integration.osc<br/>
                                                 ..\..\Scripts\up-utils\up-utils.osc
@@ -89,18 +104,18 @@
                                 Locate the section beginning with the <code>[constfile]</code> keyword. <em>Increment</em> the number following the keyword by <em>3</em>.
                                 Additionally, within that section:<br/>
                                 <small>Find:</small>
-                                <div class="code-block">
+                                <div class="pre">
                                     script\heizung_constfile.txt
                                 </div>
                                 <small>Replace with:</small>
-                                <div class="code-block">
+                                <div class="pre">
                                     ..\..\Scripts\uchill\uchill_consts.txt<br/>
                                     ..\..\Scripts\uchill\integrations\pa_man-stadtbusfamilie\uchill_man-stadtbusfamilie_integration_common_consts.txt<br/>
                                     ..\..\Scripts\uchill\integrations\pa_man-stadtbusfamilie\uchill_man-stadtbusfamilie_integration_aXX-Yd_consts.txt<br/>
                                     ..\..\Scripts\up-utils\up-utils_consts.txt
                                 </div>
                                 Replace the character (sequence) <code>&#39;XX&#39;</code>, <code>&#39;Y&#39;</code> in the last entry above with the numbers corresponding
-                                to the vehicle&#39;s type (e.g., <code>20</code> for the <em>A20</em> version) and number of doors, respectively.
+                                to the vehicle&#39;s type (e.g., <code>21</code> for the <em>A21</em> version) and number of doors, respectively.
                             </p>
                         </li>
                     </ol>
@@ -115,11 +130,11 @@
                         <li>
                             <p>
                                 <small>Find:</small>
-                                <div class="code-block">
+                                <div class="pre">
                                     (M.L.heizung_init)
                                 </div>
                                 <small>Replace with:</small>
-                                <div class="code-block">
+                                <div class="pre">
                                     (M.L.uchill_init)
                                 </div>
                             </p>
@@ -127,11 +142,11 @@
                         <li>
                             <p>
                                 <small>Find:</small>
-                                <div class="code-block">
+                                <div class="pre">
                                     (M.L.heizung_frame)
                                 </div>
                                 <small>Replace with:</small>
-                                <div class="code-block">
+                                <div class="pre">
                                     (M.L.uchill_frame)
                                 </div>
                             </p>
@@ -152,7 +167,7 @@
                     file.
                 </p>
                 <p>
-                    As a simplistic example, the following steps illustrate the integration process with the standard <em>A20</em> version of the vehicle.
+                    As a simplistic example, the following steps illustrate the integration process with the standard <em>A21</em> version of the vehicle.
                     <ol type="A">
                         <li>
                             <p>
@@ -165,7 +180,7 @@
                                 In your copy of the <code>.bus</code> file of the vehicle being modified (created initially), modify the path following the
                                 <code>[sound]</code> keyword so that it references your copy of the sound configuration file created above.<br/>
                                 <small>Example (assuming that your copy of the sound configuration file is named <code>sound_NL263_uchill.cfg</code>, obviously):</small><br/>
-                                <div class="code-block">
+                                <div class="pre">
                                     [sound]<br/>
                                     sound\sound_NL263_uchill.cfg
                                 </div>
@@ -200,7 +215,7 @@
                                     <li>
                                         <p>
                                             Append the following entries to the file:<br/>
-                                            <div class="code-block">
+                                            <div class="pre">
                                                 ######################################<br/>
                                                 cabin heaters<br/><br/>
 

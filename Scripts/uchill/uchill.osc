@@ -1375,7 +1375,7 @@
 ' equal to
 '     <ghe_t_increase_rate_max> (1),
 '         during a period of
-'     <ghe_time_max> seconds.
+'     <ghe_time_max>.
 ' The actual values are premised on related findings of studies conducted on cars.
 ' In order to compute the temperature rate within the current context, we next use (1) with the (101% arbitrary)
 ' formula
@@ -1383,7 +1383,7 @@
 '         * (A/C pseudo-factor) (2)
 ' where
 '     (insolation factor) = min((solar elevation angle parameter), (brightness parameter), (precipitation parameter)),
-'         all of whe parameters of which are derived from OMSI-built-in variables
+'         all of the parameters of which are derived from OMSI-built-in variables
 '     (radiation containment factor) expresses greenhouse effect reduction, occurring due to radiative heat "escape"
 '         (through windows, etc.); not to be confused with convective losses (that too are linked to open surfaces)
 '     (A/C pseudo-factor) is just a hack to ensure the driver and passenger A/C-based functions are able to, when in
@@ -1392,14 +1392,15 @@
 ' heat losses, as well as the maximum permitted ghe-induced temperature increase
 '     (current (gross) ghe temperature rate) = min(((2) + (current loss rate)), (maximum loss rate)) (3),
 ' where
-'     (current loss rate) = abs(min(0, ((conductive losses) + (convective losses) + (A/C cooling mode losses)), and
+'     (current loss rate) = abs(min(0, ((conductive losses) + (convective losses) + (A/C cooling mode losses)))), and
 '     (maximum loss rate) = the same kinds of losses as above, but computed for a environment - cabin temperature
-'         difference equal to (2)
+'         difference equal to
+'             (2) * <ghe_time_max> (4)
 ' By doing so, we ensure that a) the cabin's temperature does actually increase at a rate of (at most) (2), but b)
-' without exceeding the upper bound of <Weather_Temperature> + (2).
+' without exceeding the upper bound of <Weather_Temperature> + (4).
 ' (2), (3) are, lastly, persisted as <cabinair_Qrate_ghe_net>, <cabinair_Qrate_ghe_gross>, respectively, and, upon this
 ' macro's return, <cabinair_Qrate_ghe_gross> is treated by the delegator as any other <cabinair_Qrate_xxx> variable,
-' during cabin temperature update.
+' during cabin temperature update, whereas <cabinair_Qrate_ghe_net> is only used as a debugging aid.
 '-----------------------------------------------------------------------------------------------------------------------
 {macro:ghe_impact}
 ' general notes:
@@ -1410,7 +1411,7 @@
 
 ' ghe insolation factor
 ' ideally we would also somehow add the vehicle's orientation as a function of the sun's position into the "equation";
-'  i.e., the (glass) surface exposed to the sun's rays, max at a right angle
+'  i.e., the (glass) surface area exposed to the sun's rays, max at a right angle
 
 ' insolation factor - solar elevation angle parameter
     (L.S.SunAlt) 0 max 90 min (F.L.ghe_insolation_factor_max_f_solar_elevation_angle)

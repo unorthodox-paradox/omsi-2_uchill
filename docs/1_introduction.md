@@ -6,7 +6,7 @@
 #### 1.1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Overview
 
 The purpose of this project is to provide an alternative cooling and heating script for [*OMSI 2*](http://omnibussimulator.de) buses, satisfying—given both my personal as well as the game's limitations—to the extent practically feasible the following requirements:
-* Its functionality / "behavior" has to *feel realistic* to the end user.
+* Its functionality / "behavior" has to *feel realistic* to the end-user.
 * It must be *generic*, thus capable of addressing the apposite needs of a large number of preexistent vehicles. In other words, the script has to be vehicle-independent, that is, its integration with any given vehicle must be possible without altering either the vehicle and/or (the core / business logic) of the script.
 * It must be *configurable* / *customizable* without requiring code modification, so as to be easily tailorable to meet individual vehicles' characteristics.
 * It should be (easily) *extensible*, in order to fulfill emergent or special / "edge" cases.
@@ -78,11 +78,11 @@ This OMSI 2 modification is public domain content, published under the terms of 
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Instruction placeholder, to be replaced as appropriate.<br/><br/>
 *OMSI (root / base) directory*, `<OMSI>`<br/>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The OMSI 2 installation directory.<br/><br/>
-*UCHill (installation) directory*, `<UCHill>`<br/>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The directory containing the modification's core files, located at `<OMSI\Scripts\uchill`.<br/><br/>
+*UCHill (root / base) (installation) directory*, `<UCHill>`<br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The UCHill installation directory, located at `<OMSI>\Scripts\uchill`.<br/><br/>
 *Target / host vehicle (directory)*, `<target vehicle>`<br/>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Some OMSI 2 *user* vehicle (bus), with which UCHill is to be integrated.<br/>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The directory containing the files thereof, typically a sub-directory of `<OMSI>\Vehicles\`.
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The directory containing the files thereof, typically a sub-directory of `<OMSI>\Vehicles`.
 ***
 <sup><a name="footnote_1">1</a>: Those are merely referenced, i.e., they are *not redistributed* with this modification.</sup>
 ***

@@ -7,19 +7,19 @@ Using UCHill is a two-step process: First you must perform a one-time installati
 
 #### 2.1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Installing UCHill
 
-Extract the compressed archive's `Scripts` directory into your root OMSI 2 directory, choosing "Yes" if asked whether merging is desired; no existing files other than (potential remnants from a previous UCHill installation) the modification's own will be modified.
+Extract the compressed archive's `Scripts` directory into your root OMSI 2 directory, choosing "Yes" if asked whether merging is desired; no existing files (other than potential remnants from a previous UCHill installation) will be modified.
 
 #### 2.2&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Integrating UCHill
 
 #### 2.2.1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Natively supported vehicles
 
-As of version *1.1.0*, the UCHill distribution already contains the logic required for its integration with the vehicles enumerated below:
+UCHill already ships with the logic required for its integration with the vehicles enumerated below:
 
-Vehicle (package) | Version | Remarks
-------------------|---------|--------
-*MAN Stadtbusfamilie* add-on buses | | 
+Vehicle (collection) | Version | Remarks
+---------------------|---------|--------
+*MAN Stadtbusfamilie* add-on buses | | Since UCHill 1.1.0 
 
-If the list above includes the vehicle you intend to integrate UCHill with, all you have to do is open `<UCHill>\integrations\<name of target vehicle>\INSTALLATION_GUIDE.xhtml` with your favorite web browser and follow the instructions listed therein. Note that you will still have to modify or otherwise manipulate some of the vehicle's files, although the process will be more streamlined, compared to the alternative case. Plus, you will not have to write any code.
+If the list above includes the vehicle you intend to integrate UCHill with, all you have to do is open `<UCHill>\integrations\<name of natively supported vehicle (collection)>\INSTALLATION_GUIDE.xhtml` with your favorite web browser and follow the instructions listed therein. Note that you will still have to modify or otherwise manipulate some of the vehicle's files, although the process will be more streamlined, compared to the alternative case. Plus, you will not have to write any code.
 
 If the above list does not include your targeted vehicle, proceed to the next section.
 
@@ -35,14 +35,14 @@ Once you are done writing the adapter, save it as a new `.osc` file wherever you
 
 #### 2.2.2.2&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Copying vehicle-specific files
 
-While not strictly necessary, it is for your own convenience recommended that, as a precaution, you make copies of the following files pertaining to the targeted vehicle:
+While not strictly necessary, it is, as a precaution and for your own convenience, recommended that you make copies of the following files pertaining to the targeted vehicle:
 * The vehicle's `.bus` file, directly under `<target vehicle>`.
 * The vehicle's *main* script, usually residing at `<target vehicle>\<script dir>\<main script>`. If in doubt regarding the `<script dir>` and `<main script>` path name components, refer to the `.bus` file.
 * The vehicle's sound configuration file, located at `<target vehicle>\<sound dir>\<sound file>`. If in doubt regarding the `<sound dir>` and `<sound file>` path name components, refer to the `.bus` file.
 
 #### 2.2.2.3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Modifying the `.bus` file
 
-In your copy of the `.bus` file, perform the following steps:
+In your copy of the `.bus` file, perform the following tasks:
 
 1. Modify the second string following the `[friendlyname]` keyword to help you identify the modified version of the vehicle in-game later on.
 1. In the `[varnamelist]` section, replace any entries pertaining to the vehicle's cooling / heating script(s) with:

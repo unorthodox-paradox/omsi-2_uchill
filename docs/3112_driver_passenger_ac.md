@@ -20,13 +20,13 @@ F1, as suggested by its name, is responsible for heating and cooling the driver'
 
 #### 3.1.1.2.3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Operational mode
 
-Depending on its controlling button's state, F1 may operate in either of the two following primary modes: *EM* (button in "OFF" state) or *AM* (button in "ON" state). The former employs a mixture of cool and engine-heated air, while the latter supplies air whose temperature is regulated by the roof-mounted A/C unit (in vehicles not having one, the availability of a smaller, driver-dedicated imaginary one is assumed).
+Depending on its controlling controller's state, F1 may operate in either of the two following primary modes: *EM* (controller in "OFF" state) or *AM* (controller in "ON" state). The former employs a mixture of cool and engine-heated air, while the latter supplies air whose temperature is regulated by the roof-mounted A/C unit (in vehicles not having one, the availability of a smaller, driver-dedicated imaginary one is assumed).
 
 F2 has no such operational mode, as it is always backed by one or multiple exterior A/C units.
 
 #### 3.1.1.2.4&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Output temperature - Driver's A/C
 
-In EM, the temperature of the function's air output lies in the interval [t<sub>cool</sub>, t<sub>engine\*</sub>], depending directly on *A2*'s setting. The value of the "cool" lower bound is either equal to that of the environment, when A4 is in *FM* (button in "OFF" state), or that of the cabin, when A4 is in *RM* (button in "ON" state). The starred upper bound implies that, regardless of the engine's temperature, the output temperature never rises above sane—in the sense of posing a threat to public health—limits.
+In EM, the temperature of the function's air output lies in the interval [t<sub>cool</sub>, t<sub>engine\*</sub>], depending directly on *A2*'s setting. The value of the "cool" lower bound is either equal to that of the environment, when A4 is in *FM* (controller in "OFF" state), or that of the cabin, when A4 is in *RM* (controller in "ON" state). The starred upper bound implies that, regardless of the engine's temperature, the output temperature never rises above sane—in the sense of posing a threat to public health—limits.
 
 In AM, the output temperature's interval likewise depends on A2, with its minimum and maximum values in this case varying based on several factors, including the A/C unit's effectiveness and the environmental temperature's departure from the A/C's *ideal* output temperature represented by A2's setting. A4 plays a role in this operational mode as well: In RM, the positive feedback loop occurring—the amount of air being processed during each frame is warmer or cooler than that the frame before, therefore being easier to warm up or cool down further by spending the same amount of energy—allows the A/C to attain *better*, i.e., closer to the desired ideal, output temperatures than those it would achieve in the same context under FM.
 
@@ -70,13 +70,13 @@ When [idle](#311216idle-states), both functions (F1 only while in AM) in most ca
 
 #### 3.1.1.2.13&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sounds
 
-Use of the two functions can trigger playback of up to (save for button sounds) five different sounds: two per function (one being fan- and one A/C-emitted) plus one allocated to (if present) the exterior A/C unit.
+Use of the two functions can trigger playback of up to (save for vehicle-specific controller sounds) five different sounds: two per function (one being fan- and one A/C-emitted) plus one allocated to (if present) the exterior A/C unit.
 
 The volume of the fan-related ones among the sounds is affected by the corresponding function's output volume as well as the power supply (engine and battery state). The interior A/C sounds' volume is too affected by the function's output volume and power supply, as well as use of the economy and maintenance profiles—when either of the latter is active, this group of sounds gets disabled—and use of *[F3](./3113_humidity_management.md)*. Lastly, the exterior A/C sounds' volume depends on power supply and generally on which ones of all three A/C-based functions—F1, F2 and F3, weighted differently—are in use; in other words, its volume gets maximized when all functions are active.
 
 #### 3.1.1.2.14&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Inertia
 
-From the instant either of the functions gets triggered (as a result of e.g. their controller being pushed or, in the case of F1 in AM, A2 being adjusted), several factors affect the overall delay, i.e., the time that must elapse, before they can begin actually contributing to the cabin's temperature (and its humidity, as a side effect) in the desired way; the primary among these factors are:
+From the instant either of the functions gets triggered (as a result of e.g. their controller being trigerred or, in the case of F1 in AM, A2 being adjusted), several factors affect the overall delay, i.e., the time that must elapse, before they can begin actually contributing to the cabin's temperature (and its humidity, as a side effect) in the desired way; the primary among these factors are:
 - A random propagation delay (F1 in AM) for the A/C unit to even acknowledge the activation signal.
 - Unless eco mode applies (F1 in AM), the environmental temperature's departure from the (targeted) output temperature of each function.
 - The time required for the A/C unit's heating / cooling circuit (F1 in AM) to reach a temperature that is "close enough" to the (targeted) output temperature of each function, so that its output can be perceived as "comfortable" by humans. In a heating context, for instance, if it were freezing cold outside, the A/C unit would not admit any air into the cabin until it became capable of heating it up to well above the freezing point.

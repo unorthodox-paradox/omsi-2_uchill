@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @namespace "http://www.w3.org/1999/xhtml";
 
 body {
@@ -7,6 +6,36 @@ body {
     margin: auto;
     padding: 0;
     background-color: #ccccff;
+}
+
+div.warn {
+    width: 75%;
+    padding: 1%;
+    background-color: #ffc299;
+    color: #b34700;
+    border: 2px solid #b34700;
+}
+
+div.warn div.excl {
+    width: 5%;
+    padding-right: 1%;
+    font-size: 5em;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.warn div.text {
+    width: 93%;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.text h3, div.text p{
+    margin: 0;
+    padding: 0;
 }
 
 ol > li {
@@ -20,10 +49,10 @@ ol > li > p {
     font-size: initial;
 }
 
-div.code-block {
+div.pre {
     width: 75%;
     background-color: #c0c0c0;
-    padding: 5px;
+    padding: 0.5%;
     color: #000;
     font-family: "Courier New", Courier, monospace;
     font-size: 0.7em;
