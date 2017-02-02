@@ -155,7 +155,7 @@
 ' Berechnung des Gesamtvolumenstroms in die Außenwelt und umgekehrt (V zählt je Richtung, d.h. insgesamt wird 2*V
 '  bewegt)
         (L.L.velocity) 20 / abs (C.L.cabinair_openable_surface_convection_minkmh) +
-            (C.L.cabinair_openable_surface_convection_effectiveness) * 3.6 / * (S.L.cabinair_Vrate_open_surfaces)
+        (C.L.cabinair_openable_surface_convection_effectiveness) * 3.6 / * (S.L.cabinair_Vrate_open_surfaces)
 
 ' air flow-related
     (M.L.calculate_driver_ac_air_exchange_volumes)
