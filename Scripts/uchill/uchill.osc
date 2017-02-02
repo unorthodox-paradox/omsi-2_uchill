@@ -1415,7 +1415,7 @@
 
 ' insolation factor - solar elevation angle parameter
     (L.S.SunAlt) 0 max 90 min (F.L.ghe_insolation_factor_max_f_solar_elevation_angle)
-    (S.L.ghe_insolation_factor_solar_elevation_angle_param)
+        (S.L.ghe_insolation_factor_solar_elevation_angle_param)
 
 ' insolation factor - environmental brightness parameter
 ' notes:
@@ -1451,7 +1451,7 @@
         (S.L.ghe_ac_factor) *
 
 ' overall ghe intensity
-    (S.L.ghe_intensity)
+        (S.L.ghe_intensity)
 
 ' finally calculate the greenhouse-induced temperature increase rate
         (C.L.ghe_t_increase_rate_max) * s0 s1
