@@ -494,8 +494,7 @@
         (M.L.from_r10_to_r11_at_r12_linear) (L.L._r10) (S.L.passenger_ac_int_sound_vol)
 {end}
 
-' Updates the exterior (i.e., the visible--unless deactivated through repaint var, or at runtime--roof-mounted)
-' A/C unit's sound volume.
+' Updates the exterior, i.e., the roof-mounted A/C unit's sound volume, if the unit is installed / present.
 '-----------------------------------------------------------------------------------------------------------------------
 {macro:actualize_ext_ac_sound}
 ' eco mode doesn't count; normal and pre-cooling/-heating modes both do, however
